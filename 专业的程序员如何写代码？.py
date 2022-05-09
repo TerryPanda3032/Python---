@@ -2,8 +2,8 @@
 Author: TERRY
 Date: 2022-05-03 21:03:49
 LastEditors: TERRY
-LastEditTime: 2022-05-05 21:57:03
-FilePath: \Python系统课\专业的程序员如何写代码？.py
+LastEditTime: 2022-05-09 21:49:02
+FilePath: \python---\专业的程序员如何写代码？.py
 Description:
 '''
 # --------
@@ -46,7 +46,7 @@ def ensure(condition, message):
 # 测试的使用
 #
 # 注意看, 我们使用了上面定义的 ensure 来进行测试
-def test_sample():
+def test_sample(): 
     # 1, 条件
     # 2, 对你的测试打了一个标签
     ensure(1 == 1, '如果测试失败, 这句话会被打印出来')
@@ -106,10 +106,6 @@ print(product([1,3,5,7]))
 #     4. 循环结束后，变量 s 里面存的是列表中所有元素的乘积, 返回变量 s（很重要，一定要 return s）
 
 
-
-
-def product(number_number_list):
-    pass
 
 
 def test_product():

