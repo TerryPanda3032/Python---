@@ -1,12 +1,11 @@
-
-'''
+"""
 Author: TERRY
 Date: 2022-04-17 21:29:00
 LastEditors: TERRY
 LastEditTime: 2022-04-29 10:37:59
 FilePath: \Python系统课\自制图形库.py
 Description: 
-'''
+"""
 # 依旧需要使用 wonderLang 里面的函数，这样更高效
 from turtle import color
 from cv2 import edgePreservingFilter
@@ -92,8 +91,8 @@ from matplotlib import cm
 #     y=np.array(temps)
 #     plt.bar(x,y,width=space,color='#ffffff',edgecolor="#dc1f0d")
 #     plt.show()
-    
-#forecast([324,234,22,34,-1234,4,456],space=0.5,base=100)
+
+# forecast([324,234,22,34,-1234,4,456],space=0.5,base=100)
 
 # temps 如下，你也可以写自己的温度列表
 # temps = [22, 19, 22, 21, 25, 27, 30]
@@ -140,22 +139,18 @@ from matplotlib import cm
 # forecast(temps, 20, 4)
 
 # Todo 6 结合坐标系你就做出来自己的 Excel, 可视化数据库
-def main(): 
+def main():
     temps = [22, -19, 22, 30, -25, 27, 30]
-    high  = np.array([2,5])
-    x     = np.array([1,2,3,4,5,6,7])
-    plt.subplot(1,2,1)
-    plt.bar(x,temps,color='#487e02')
-    plt.plot(x,temps,color='#de1f0d')
-    plt.title('temperture')
-    plt.subplot(1,2,2)
+    high = np.array([2, 5])
+    x = np.array([1, 2, 3, 4, 5, 6, 7])
+    plt.subplot(1, 2, 1)
+    plt.bar(x, temps, color="#487e02")
+    plt.plot(x, temps, color="#de1f0d")
+    plt.title("temperture")
+    plt.subplot(1, 2, 2)
     plt.pie(high)
-    plt.title('cold&hot')
+    plt.title("cold&hot")
     plt.show()
 
 
-
-
-
-    
 main()

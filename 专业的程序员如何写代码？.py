@@ -2,7 +2,7 @@
 Author: TERRY
 Date: 2022-05-03 21:03:49
 LastEditors: TERRY
-LastEditTime: 2022-05-09 21:49:02
+LastEditTime: 2022-05-09 22:03:10
 FilePath: \python---\专业的程序员如何写代码？.py
 Description:
 '''
@@ -117,7 +117,7 @@ def test_product():
     log('$$$ product 测试完成')
 
 
-# test_product()
+test_product()
 
 
 # Todo 2
