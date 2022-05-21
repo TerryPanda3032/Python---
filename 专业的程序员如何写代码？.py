@@ -2,7 +2,7 @@
 Author: TERRY
 Date: 2022-05-03 21:03:49
 LastEditors: TERRY
-LastEditTime: 2022-05-09 22:03:10
+LastEditTime: 2022-05-10 08:41:40
 FilePath: \python---\专业的程序员如何写代码？.py
 Description:
 '''
@@ -215,7 +215,7 @@ def sum2(n):
     pass
 
 
-def test_sum1():
+def test_sum5():
     ensure(sum2(1) == 1, 'sum2 error 1')
     ensure(sum2(2) == 3, 'sum2 error 2')
     ensure(sum2(4) == 4, 'sum2 error 3')
