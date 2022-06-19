@@ -1,3 +1,11 @@
+'''
+Author: TERRY
+Date: 2022-01-21 21:27:27
+LastEditors: TERRY
+LastEditTime: 2022-05-28 11:01:21
+FilePath: \python---\first.py
+Description: 
+'''
 """
 Author: TERRY
 Date: 2022-01-21 21:27:27
@@ -8,8 +16,6 @@ Description:
 """
 
 from time import sleep
-import turtle
-
 from numpy import angle
 from wonderLang import *
 
