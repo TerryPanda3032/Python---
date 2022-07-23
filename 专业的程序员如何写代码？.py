@@ -1,3 +1,11 @@
+'''
+Author: TERRY
+Date: 2022-05-03 21:03:49
+LastEditors: TERRY
+LastEditTime: 2022-06-23 21:48:33
+FilePath: \python---\专业的程序员如何写代码？.py
+Description:
+'''
 """
 Author: TERRY
 Date: 2022-05-03 21:03:49
@@ -10,6 +18,9 @@ Description:
 # 1, 自动化测试
 # 如何自动测试你的代码？
 # --------
+
+import tempfile
+
 
 log = print
 
@@ -134,7 +145,9 @@ test_product()
 #     2. 返回 n 的值（很重要，一定要 return n）
 
 
-def abs(n):
+def abs1(n):
+    res=abs(n)
+    return res
     pass
 
 
@@ -149,7 +162,12 @@ def test_abs():
 # 参数是一个只包含数字的列表
 # 求列表中所有数字的平均数
 # 函数定义是
-# average(number_list)
+def average(number_list):
+    temp=sum(number_list)
+    res=temp/len(number_list)
+    return res
+
+    
 
 # 提示：
 #     求列表的平均数就是先求出列表中元素的总和，然后除以列表的长度（即元素的个数）
@@ -162,6 +180,8 @@ def test_abs():
 
 
 # Todo 3.1 自己尝试写一个 test_average 函数
+def test_average():
+    ensure([1,2,3,4,5]==3,"err,3")
 
 
 # Todo 4
@@ -183,9 +203,14 @@ def test_abs():
 #     4. 循环结束后，变量 s 里面存的是序列的和
 #     5. 返回变量 s（很重要，一定要 return s）
 
-
 def sum1(n):
-    pass
+    s=0
+    for i in range(n+1):
+        if i%2==1:
+            s=s+i
+        if i%2==0:
+            s=s-i
+    return s
 
 
 def test_sum1():
@@ -254,12 +279,16 @@ def test_sum5():
 #     2. 用循环把 1 到 n 的数字相乘保存到 s 中
 #     3. 循环结束后，变量 s 里面存的是从 1 到 n 的阶乘, 返回变量 s（很重要，一定要 return s）
 
-
 def fac(n):
-    pass
+    temp = 1
+    for i in range(n+1):
+        temp2=temp+1
+        res=temp*temp2
+    return res
 
 
 def test_fac():
     ensure(fac(1) == 1, "fac error 1")
     ensure(fac(5) == 120, "fac error 2")
     ensure(fac(0) == 1, "fac error 3")
+test_fac()
