@@ -4,5 +4,6 @@
     "python.linting.<linter>Enabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.pylamaEnabled": false,
-    "python.linting.mypyEnabled": true
+    "python.linting.mypyEnabled": true,
+    "python.formatting.provider": "black"
 }
